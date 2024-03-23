@@ -1,0 +1,10 @@
+.display{
+    float: left;
+    width: 50%;
+    margin-right:2rem;
+    margin-top: 2rem;
+}
+
+a{
+    text-decoration: none;
+}
