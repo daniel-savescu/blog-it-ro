@@ -9,5 +9,6 @@
 <strong>EN:</strong>
 <p>Personal IT Blog about different topics related to this vast field.</p>
 <p>The information on this blog was generated with the help of Gemini AI.</p>
+<p>You can access the Blog at the following link : <a href="https://daniel-savescu.github.io/blog-it-ro">Blog IT Ro</a></p>
 
 
