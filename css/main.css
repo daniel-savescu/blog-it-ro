@@ -1,7 +1,11 @@
 header {
     margin-top:1.5rem;
 }
-
 a{
     text-decoration: none;
+}
+code{
+    background-color: lightgray;
+    padding: 3px;
+    border-radius: 3px;
 }
