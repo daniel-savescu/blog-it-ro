@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container mb-3">
+        <!-- Main container content -->
+        <header>
+            <a href="../index.html">Pagină de start</a>
+          </header>
+        <h1 class="fw-normal text-center mt-3">Structura Linux File System</h1>
+        <hr/>
+        <p>Structura sistemului de fișiere în Linux poate fi înțeleasă printr-o comparație cu o ierarhie de directoare sau foldere în care sunt organizate fișierele și alte resurse de sistem. În Linux, această ierarhie principală este uneori numită "Filesystem Hierarchy Standard" (
+            Standardul Ierarhiei Sistemului de Fișiere) sau FHS. Iată o descriere simplificată a acestei structuri:</p>
+        <ol>
+            <li><p><span class="fw-bold">/ (Root)</span>:</p></li>
+                <ul>
+                    <li><p>Acesta este nivelul superior al ierarhiei sistemului de fișiere și conține toate celelalte directoare și fișiere.</p></li>
+                    <li><p>Totul începe de aici și toate celelalte directoare și fișiere sunt organizate în subdirectoare.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/bin (Binary)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director conține fișierele binare (executabile) de bază necesare pentru funcționarea sistemului.</p></li>
+                    <li><p>De exemplu, aici se află programe precum ls (pentru listarea fișierelor), cp (pentru copierea fișierelor) și altele.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/boot</span>:</p></li>
+                <ul>
+                    <li><p>Aici sunt stocate fișierele necesare pentru încărcarea sistemului de operare, inclusiv kernelul și alte 
+                        fișiere de configurare a încărcătorului de boot, cum ar fi GRUB.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/dev (Device)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director conține fișiere speciale care reprezintă dispozitive hardware ale sistemului.</p></li>
+                    <li><p>De exemplu, fișierele din <strong>/dev</strong> pot reprezenta dispozitive precum hard disk-uri (<strong>/dev/sda</strong>), unități de disc CD-ROM (<strong>/dev/cdrom</strong>) sau alte dispozitive hardware.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/etc (Et Cetera)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director conține fișierele de configurare pentru diferite programe și servicii de sistem.</p></li>
+                    <li><p>De exemplu, aici se găsesc fișiere de configurare pentru rețea (<strong>/etc/network</strong>), pentru utilizatori și grupuri (<strong>/etc/passwd, /etc/group</strong>) și altele.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/home</span>:</p></li>
+                <ul>
+                    <li><p>Acesta este directorul în care sunt stocate directoarele personale pentru fiecare utilizator al sistemului.</p></li>
+                    <li><p>Fiecare utilizator are un director personal în interiorul acestui director, cu numele de utilizator ca și numele directorului (<strong>/home/utilizator</strong>).</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/lib (Library)</span>:</p></li>
+                <ul>
+                    <li><p>Aici sunt stocate bibliotecile partajate necesare pentru funcționarea programelor din <strong>/bin și /sbin</strong>.</p></li>
+                    <li><p>Aceste biblioteci sunt folosite de programele executabile pentru funcționalitatea lor.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/mnt (Mount)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director este utilizat pentru a monta temporar alte sisteme de fișiere sau dispozitive de stocare.</p></li>
+                    <li><p>De exemplu, dacă montați un CD-ROM sau un dispozitiv USB, acestea vor fi montate în <strong>/mnt</strong>.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/opt (Optional)</span>:</p></li>
+                <ul>
+                    <li><p>Aici sunt stocate adițional programele instalate de utilizator sau de terți.</p></li>
+                    <li><p>Aceste programe nu fac parte din distribuția de bază a sistemului de operare.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/proc (Process)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director conține informații despre procese și alte informații de sistem.</p></li>
+                    <li><p>Fișierele aici sunt generate dinamic și oferă informații despre sistem și procese în timp real.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/root</span>:</p></li>
+                <ul>
+                    <li><p>Acesta este directorul de acasă al utilizatorului root (super-utilizatorul).</p></li>
+                    <li><p>Root este echivalentul utilizatorului administrativ în Linux.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/sbin (System Binary)</span>:</p></li>
+                <ul>
+                    <li><p>Aici sunt stocate fișierele binare (executabile) necesare pentru administrarea sistemului.</p></li>
+                    <li><p>De exemplu, programe precum <strong>ifconfig</strong> (pentru configurarea interfețelor de rețea) sau <strong>shutdown</strong> (pentru oprirea sistemului) sunt stocate aici.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/tmp (Temporary)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director este folosit pentru stocarea fișierelor temporare create de programe sau de sistem.</p></li>
+                    <li><p>Fișierele din acest director sunt șterse automat la repornirea sistemului.</p></li>
+                </ul>
+            <li><p><span class="fw-bold">/usr (User)</span>:</p></li>
+                <ul>
+                    <li><p>Acest director conține programe, biblioteci și alte fișiere care sunt folosite de utilizatori.</p></li>
+                    <li><p>Aici sunt stocate aplicațiile și bibliotecile care nu sunt necesare pentru funcționarea de bază a sistemului.</p>
+                </ul>
+            <li><p><span class="fw-bold">/var (Variable)</span>:</p></li>
+                <ul>
+                    <li><p>Aici sunt stocate date variabile, cum ar fi fișierele de jurnalizare (logs), bazele de date sau alte fișiere care se schimbă frecvent.</p></li>
+                    <li><p>De exemplu, fișierele de jurnalizare ale sistemului (<strong>/var/log</strong>) sunt stocate aici.</p></li>
+                </ul>
+        </ol>
+        <p class="fw-bold">Concluzie:</p>
+        <p>Aceasta este o privire simplificată asupra structurii sistemului de fișiere în Linux. Este important să rețineți că aceste descrieri sunt generalizări și că pot exista variații între diferitele distribuții Linux sau configurări de sistem.</p>
+        <a href="../index.html">Pagină de start</a>  
+    </div>      
+  
+      
+    
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>

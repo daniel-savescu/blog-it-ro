@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container mb-3">
+        <!-- Main container content -->
+        <header>
+            <a href="../index.html">Pagină de start</a>
+          </header>
+        <h1 class="fw-normal text-center mt-3">Structura Linux File System</h1>
+        <hr/>
+        <p>Comanda <code>ls</code> este una dintre cele mai fundamentale și utile comenzi în Linux, folosită pentru listarea conținutului unui director. Această comandă este esențială în lucrul cu sistemul de fișiere în Linux și are diverse opțiuni care îi extind funcționalitatea. Iată o analiză a acestei comenzi împreună cu cele mai folosite opțiuni:</p>
+        <p class="fw-bold">Descriere a comenzii ls:</p>
+        <p>Comanda ls afișează conținutul unui director. Dacă este apelată fără argumente, afișează conținutul directorului curent.</p>
+        <p>Sintaxă:</p>
+        <p><code>ls [optiuni] [directoare/fișiere]</code></p>
+        <p class="fw-bold">Cele mai folosite opțiuni:</p>
+        <ol>
+            <li><p><strong>-l (lung)</strong>:</p></li>
+                <ul>
+                    <li><p>Afișează o listă lungă care conține detalii despre fiecare fișier sau director, inclusiv permisiunile, proprietarul, grupul, dimensiunea, data și ora ultimei modificări etc.</p></li>
+                    <li><p>Exemplu : <code>ls -l</code></p></li>
+                </ul>
+            <li><p><strong>-a (ascuns)</strong>:</p></li>
+                <ul>
+                    <li><p>Afișează inclusiv fișierele și directoarele ascunse, care încep cu un punct.</p></li>
+                    <li><p>Exemplu : <code>ls -a</code></p></li>
+                </ul>
+            <li><p><strong>-h (uman)</strong>:</p></li>
+                <ul>
+                    <li><p>Afișează dimensiunile fișierelor într-o formă ușor de înțeles pentru oameni, precum KB, MB, GB, etc.</p></li>
+                    <li><p>Exemplu : <code>ls -lh</code></p></li>
+                </ul>
+            <li><p><strong>-t</strong>:</p></li>
+                <ul>
+                  <li><p>Sortează fișierele și directoarele în funcție de data și ora modificării, începând cu cel mai recent.</p></li>
+                  <li><p>Exemplu : <code>ls -t</code></p></li>
+                </ul>
+            <li><p><strong>-F</strong>:</p></li>
+                <ul>
+                  <li><p>Adaugă indicatori la fiecare intrare pentru a indica tipul fișierului (de exemplu, <code>/</code> pentru directoare, <code>*</code> pentru fișiere executabile, <code>@</code> pentru link-uri simbolice etc.).</p></li>
+                  <li><p>Exemplu : <code>ls -F</code></p></li>
+                </ul>
+            <li><p><strong>--color</strong>:</p></li>
+                <ul>
+                  <li><p>Afișează ieșirea în culori, evidențiind diferite tipuri de fișiere și directoare.</p></li>
+                  <li><p>Utilizarea culorilor poate fi configurată în fișierul de configurare <code>~/.bashrc</code> sau <code>~/.bash_profile</code>.</p></li>
+                  <li><p>Exemplu : <code>ls --color</code></p></li>
+                </ul>
+        </ol>
+        <p>Acestea sunt câteva dintre cele mai folosite opțiuni ale comenzii <code>ls</code> în Linux. Ele oferă o serie de modalități de personalizare a afișării listei de fișiere și directoare pentru a se potrivi nevoilor utilizatorului. 
+          Pentru o listă completă a opțiunilor și mai multe informații, puteți consulta pagina de manual a comenzii <code>ls</code>, folosind comanda <code>man ls</code>.</p>
+        <a href="../index.html">Pagină de start</a>  
+    </div>      
+  
+      
+    
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
