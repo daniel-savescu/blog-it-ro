@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="container mb-3">
+        <!-- Main container content -->
+        <header>
+            <a href="../index.html">Pagină de start</a>
+          </header>
+        <h1 class="fw-normal text-center mt-3">Copiază fișiere și directoare cu ușurință în Linux</h1>
+        
+        <hr/>
+        <p>Comanda <code>cp</code> (copy) este un instrument fundamental în Linux, permițând copierea fișierelor și directoarelor în diverse locații.</p>
+        <p>Pe lângă funcționalitatea de bază, <code>cp</code> include o serie de opțiuni utile care te pot ajuta să personalizezi și să optimizezi modul de copiere a datelor:</p>
+        <p class="fw-bold">Funcționalitate de bază:</p>
+          <ul>
+            <li><p><code>cp fișier destinație</code>: Copiază fișierul specificat în locația de destinație.</p></li>
+          </ul>
+        <p class="fw-bold">Opțiuni esențiale:</p>
+          <ul>
+            <li><p><code>-r</code>: Copiază recursiv directoarele, inclusiv subdirectoarele și fișierele conținute.</p></li>
+            <li><p><code>-p</code>: Păstrează permisiunile, proprietarul și grupul fișierelor copiate.</p></li>
+            <li><p><code>-v</code>: Afișează informații detaliate despre procesul de copiere.</p></li>
+          </ul>
+        <p class="fw-bold">Exemple:</p>
+          <ul>
+            <li><p><code>cp doc.txt /home/utilizator/Documente</code>: Copiază "doc.txt" în "Documente".</p></li>
+            <li><p><code>cp -a /home/utilizator/test_folder/. /destinație</code>: Copiază  suprascrie toate fișierele / directoarele din test_folder în destinație.</p></li>
+            <li><p><code>cp -p imagine.jpg /media/usb</code>: Copiază "imagine.jpg" pe dispozitivul USB, păstrând permisiunile.</p></li>
+          </ul>
+        <p class="fw-bold">Opțiuni avansate:</p>
+          <ul>
+            <li><p><code>-a</code>: Copiază fișierele ca și cum ar fi arhive (similar cu tar).</p></li>
+            <li><p><code>-b</code>: Copiază fișierele în mod bloc, optimizând transferul pentru dispozitivele bloc.</p></li>
+            <li><p><code>-f</code>: Forțează suprascrierea fișierelor existente la destinație.</p></li>
+            <li><p><code>-l</code>: Creează linkuri simbolice către fișierele copiate în loc de copii complete.</p></li>
+          </ul>
+        <p class="fw-bold">Trucuri avansate:</p>
+          <ul>
+            <li><p>Combină <code>cp</code> cu alte comenzi: <code>cp doc.txt && mv doc.txt.bak</code>: Copiază "doc.txt" și creează o copie de rezervă cu sufixul ".bak".</p></li>
+            <li><p>Folosește autocompletarea tab-ului pentru a completa rapid numele fișierelor și directoarelor.</p></li>
+            <li><p>Utilizează opțiunile avansate pentru a controla detaliile procesului de copiere, precum permisiunile și modul de transfer.</p></li>
+          </ul>
+        <p class="fw-bold">Concluzie:</p>
+        <p>Comanda <code>cp</code> este un instrument versatil și puternic pentru copierea datelor în Linux. Cu opțiunile sale avansate, te poate ajuta să gestionezi eficient fișierele și directoarele tale, adaptându-se la diverse nevoi și scenarii.</p>
+        <p>Explorează opțiunile și trucurile prezentate pentru a descoperi potențialul maxim al comenzii <code>cp</code> și a stăpâni copierea datelor în sistemul tău Linux!</p>
+        <a href="../index.html">Pagină de start</a>  
+      </div>      
+  
+      
+    
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+  </body>
+</html>
