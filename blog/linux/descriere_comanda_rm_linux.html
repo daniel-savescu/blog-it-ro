@@ -27,9 +27,16 @@
         <hr/>
         <p>Comanda <code>rm</code> (remove) este un instrument fundamental în Linux, permițând ștergerea fișierelor și directoarelor cu diverse opțiuni pentru a personaliza și rafina procesul.</p>
         <p class="fw-bold">Funcționalitate de bază:</p>
-        <ul>
-            <li><p><code>rm fișier</code>: Șterge fișierul specificat.</p></li>
-        </ul>
+        
+        <!--rm copiaza cod-->
+          <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value="rm fișier" class="form-control" id="rm_page_1" name="status">
+          </div>
+          <p class="">Șterge fișierul specificat.</p>
+          <button type="button" class="btn btn-success" onclick="copy_rm_page_1()">Copiză codul</button>
+          <p id="mesaj_pagina_rm" class="fw-bold mt-3"></p>
+
         <p class="fw-bold">Opțiuni esențiale:</p>
         <ul>
             <li><p><code>-r</code>: Șterge recursiv directoarele, inclusiv subdirectoarele și fișierele conținute.</p></li>
@@ -67,7 +74,8 @@
   </div>      
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
+    <!--Propriul JS script-->
+    <script src="../../js/script.js"></script>
     
   </body>
   </html>

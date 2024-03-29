@@ -29,9 +29,16 @@
         <p>Comanda <code>cp</code> (copy) este un instrument fundamental în Linux, permițând copierea fișierelor și directoarelor în diverse locații.</p>
         <p>Pe lângă funcționalitatea de bază, <code>cp</code> include o serie de opțiuni utile care te pot ajuta să personalizezi și să optimizezi modul de copiere a datelor:</p>
         <p class="fw-bold">Funcționalitate de bază:</p>
-          <ul>
-            <li><p><code>cp fișier destinație</code>: Copiază fișierul specificat în locația de destinație.</p></li>
-          </ul>
+          
+        <!--cp copiaza cod-->
+        <div class="input-group mb-3">
+          <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+          <input type="text" value="cp fișier destinație" class="form-control" id="cp_page_1" name="status">
+        </div>
+        <p class="">Copiază fișierul specificat în locația de destinație.</p>
+        <button type="button" class="btn btn-success" onclick="copy_cp_page_1()">Copiză codul</button>
+        <p id="mesaj_pagina_cp" class="fw-bold mt-3"></p>
+        
         <p class="fw-bold">Opțiuni esențiale:</p>
           <ul>
             <li><p><code>-r</code>: Copiază recursiv directoarele, inclusiv subdirectoarele și fișierele conținute.</p></li>
@@ -63,5 +70,7 @@
     </div>      
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Priopriul JS script-->
+    <script src="../../js/script.js"></script>
   </body>
 </html>
