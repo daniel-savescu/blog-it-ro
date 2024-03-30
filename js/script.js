@@ -136,5 +136,61 @@ function copy_rm_page_1(){
     document.getElementById("mesaj_pagina_rm").innerHTML = "Codul a fost copiat : " + copyCode.value;
 }
 
+//Pagina "Descriere comanda cat"
+
+function copy_cat_page_1(){
+    let copyCode = document.getElementById("cat_page_1");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_cat_page_2(){
+    let copyCode = document.getElementById("cat_page_2");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat_2").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_cat_page_3(){
+    let copyCode = document.getElementById("cat_page_3");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat_3").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_cat_page_4(){
+    let copyCode = document.getElementById("cat_page_4");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat_4").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_cat_page_5(){
+    let copyCode = document.getElementById("cat_page_5");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat_5").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_cat_page_6(){
+    let copyCode = document.getElementById("cat_page_5");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_cat_6").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
 
     
