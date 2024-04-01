@@ -1,0 +1,141 @@
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link" href="../../blog/linux/descriere_comanda_rm_linux.html">GNU/Linux</a>
+      </div>
+  </nav>
+  <!-- Main container -->
+  <div class="container mt-5 pt-4 mb-5">
+        <h1 class="fw-normal text-center mt-3">Comanda grep: O descriere detaliată cu opțiuni</h1>
+        <hr/>
+        <p>
+            <code>grep</code> este o unealtă puternică în Linux pentru căutarea de text în fișiere sau intrare standard. Numele provine de la primele litere ale 
+            "global/regular expression/print", reflectând funcțiile sale principale:
+        </p>
+        <ul>
+            <li><p><span class="fw-bold">Global</span>: Căutarea se realizează în tot textul specificat.</p></li>
+            <li><p><span class="fw-bold">Expresie regulată</span>: Permite definirea modelelor complexe de căutare.</p></li>
+            <li><p><span class="fw-bold">Print</span>: Afișează liniile care corespund modelului.</p></li>
+        </ul>
+        <p class="fw-bold">Sintaxa de bază:</p>
+
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value="grep [opțiuni] model [fișier(e)]" class="form-control" id="grep_page_1" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_1()">Copiză codul</button>
+          <p id="mesaj_pagina_grep" class="fw-bold mt-3"></p>
+        <p class="fw-bold">Explicație:</p>
+          <ul>
+            <li><p><span class="fw-bold">opțiuni</span>: Modifică comportamentul comenzii grep.</p></li>
+            <li><p><span class="fw-bold">model</span>: Expresia regulată care definește textul de căutat.</p></li>
+            <li><p><span class="fw-bold">fișier(e)</span>: Specifică fișierele unde se realizează căutarea. Implicit, se utilizează intrarea standard (tastatură).</p></li>
+          </ul>
+        <p class="fw-bold">Opțiuni comune:</p>
+          <ul>
+            <li><p><code>-c</code>: Afișează numărul de linii care conțin modelul.</p></li>
+            <li><p><code>-i</code>: Ignoră diferența dintre majuscule și minuscule.</p></li>
+            <li><p><code>-n</code>: Afișează numărul de linie înainte de fiecare rezultat.</p></li>
+            <li><p><code>-E</code>: Permite folosirea expresiilor regulate extinse.</p></li>
+            <li><p><code>-v</code>: Afișează doar liniile care <strong>nu</strong> conțin modelul.</p></li>
+            <li><p><code>-o</code>: Afișează doar <strong>porțiunile</strong> din linii care corespund modelului.</p></li>
+            <li><p><code>-A număr</code>: Afișează și <code>număr</code> de linii după cele care conțin modelul.</p></li>
+            <li><p><code>-B număr</code>: Afișează și <code>număr</code> de linii înainte de cele care conțin modelul.</p></li>
+          </ul>
+        <p class="fw-bold">Exemple:</p>
+        <p class="fw-bold">1. Căutarea unui cuvânt specific:</p>
+        
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep "cuvant" fisier.txt' class="form-control" id="grep_page_2" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_2()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_2" class="fw-bold mt-3"></p>
+        
+        <p class="fw-bold">2. Ignorarea diferenței de majuscule/minuscule:</p>
+        
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -i "cuvant" fisier.txt' class="form-control" id="grep_page_3" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_3()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_3" class="fw-bold mt-3"></p>
+        
+        <p class="fw-bold">3. Afișarea numărului de linii:</p>
+        
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -c "cuvant" fisier.txt' class="form-control" id="grep_page_4" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_4()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_4" class="fw-bold mt-3"></p>
+
+        <p class="fw-bold">4. Căutarea cu expresii regulate extinse:</p>
+
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -E "expresie_regulata" fisier.txt' class="form-control" id="grep_page_5" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_5()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_5" class="fw-bold mt-3"></p>
+
+        <p class="fw-bold">5. Afișarea contextului:</p>
+
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -A 2 -B 2 "cuvant" fisier.txt' class="form-control" id="grep_page_6" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_6()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_6" class="fw-bold mt-3"></p>
+
+        <p class="fw-bold">6. Afișarea doar a porțiunilor care corespund modelului:</p>
+
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -o "model" fisier.txt' class="form-control" id="grep_page_7" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_7()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_7" class="fw-bold mt-3"></p>
+        
+        <p class="fw-bold">7. Inversarea rezultatului:</p>
+
+        <!--grep copiaza cod-->
+        <div class="input-group mb-3">
+            <span class="input-group-text text-primary" id="basic-addon1">@cod : </span>
+            <input type="text" value='grep -v "cuvant" fisier.txt' class="form-control" id="grep_page_8" name="status">
+          </div>
+          <button type="button" class="btn btn-success" onclick="copy_grep_page_8()">Copiză codul</button>
+          <p id="mesaj_pagina_grep_8" class="fw-bold mt-3"></p>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Propriul script JS-->
+    <script src="../../js/script.js"></script>
+    
+    
+    </body>
+    </html>

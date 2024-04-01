@@ -192,5 +192,81 @@ function copy_cat_page_6(){
     document.getElementById("mesaj_pagina_cat_6").innerHTML = "Codul a fost copiat : " + copyCode.value;
 }
 
+//Pagina "Descriere Grep"
+
+function copy_grep_page_1(){
+    let copyCode = document.getElementById("grep_page_1");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_2(){
+    let copyCode = document.getElementById("grep_page_2");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_2").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_3(){
+    let copyCode = document.getElementById("grep_page_3");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_3").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_4(){
+    let copyCode = document.getElementById("grep_page_4");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_4").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+
+function copy_grep_page_5(){
+    let copyCode = document.getElementById("grep_page_5");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_5").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_6(){
+    let copyCode = document.getElementById("grep_page_6");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_6").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_7(){
+    let copyCode = document.getElementById("grep_page_7");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_7").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+function copy_grep_page_8(){
+    let copyCode = document.getElementById("grep_page_8");
+ 
+    copyCode.select();
+    document.execCommand("copy");
+             
+    document.getElementById("mesaj_pagina_grep_8").innerHTML = "Codul a fost copiat : " + copyCode.value;
+}
+
+
 
     
