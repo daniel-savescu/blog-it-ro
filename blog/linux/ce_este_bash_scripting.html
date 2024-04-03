@@ -1,0 +1,67 @@
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link" href="../../blog/linux/descriere_comanda_rm_linux.html">GNU/Linux</a>
+      </div>
+  </nav>
+  <!-- Main container -->
+  <div class="container mt-5 pt-4 mb-5">
+        <h1 class="fw-normal text-center mt-3">Ce este Bash Scripting?</h1>
+        <hr/>
+        <p>
+            Un script Bash este un fișier text simplu care conține o serie de comenzi pe care le executa Bash, un interpret de linie de comandă popular pe Linux și macOS. 
+            Aceste comenzi pot fi orice ați introduce manual în terminal, cum ar fi <code>ls</code> pentru listarea fișierelor, <code>cp</code> pentru copierea fișierelor sau <code>mv</code> pentru mutarea fișierelor.
+        </p>
+        <p class="fw-bold">De ce să folosim bash scripting?</p>
+        <p>Există multe beneficii ale utilizării bash scripting-ului:</p>
+        <ul>
+            <li><p><strong>Automatizarea sarcinilor repetitive</strong>: Dacă efectuați frecvent aceleași comenzi la terminal, le puteți pune într-un script și rula scriptul o singură dată. Acest lucru vă economisește timp și reduce erorile.</p></li>
+            <li><p><strong>Efectuarea sarcinilor complexe</strong>: Scripturile Bash pot efectua sarcini mai complexe decât este posibil cu o singură comandă. Puteți folosi logica condițională (de exemplu, if-else) și bucle (de exemplu, for, while) pentru a controla fluxul scriptului.</p></li>
+            <li><p><strong>Crearea de programe personalizate</strong>: Scripturile Bash pot fi folosite pentru a crea programe simple personalizate care îndeplinesc nevoile specifice.</p></li>
+        </ul>
+        <p class="fw-bold">Cum să scrieți un script Bash</p>
+        <p>Pentru a scrie un script Bash, urmați acești pași:</p>
+        <ul>
+            <li><p><strong>Creați un fișier text</strong>: Utilizați un editor de text pentru a crea un fișier text nou.</p></li>
+            <li><p><strong>Adăugați shebang-ul</strong>: Prima linie a scriptului trebuie să fie o shebang. Acesta specifică interpretul care trebuie utilizat pentru a rula scriptul. Pentru Bash, aceasta este de obicei <code>#!/bin/bash</code>.</p></li>
+            <li><p><strong>Adăugați comenzile</strong>: Adăugați comenzile pe care doriți să le execute scriptul, câte una pe linie.</p></li>
+            <li><p><strong>Salvați fișierul</strong>: Salvați fișierul cu o extensie <code>.sh</code> (de exemplu, <code>myscript.sh</code>).</p></li>
+            <li><p><strong>Faceți scriptul executabil</strong>:  Utilizați comanda <code>chmod +x</code> pentru a face scriptul executabil.</p></li>
+        </ul>
+        <p class="fw-bold">Exemplu de script Bash</p>
+        <p>Iată un exemplu simplu de script Bash care listează toate fișierele din directorul curent:</p>
+        <code>
+            #!/bin/bash<br/><br/>
+            # Listați toate fișierele din directorul curent<br/>
+            ls -l</br/><br/>
+            # Afișați un mesaj<br/>
+            echo "S-au listat toate fișierele din directorul curent."
+        </code>
+        </p>Pentru a rula acest script, salvați-l ca list_files.sh și apoi executați următoarea comandă în terminal:</p>
+        <p><code>./list_files.sh</code></p>
+        
+        <p>Acest script va lista toate fișierele din directorul curent, urmat de mesajul "S-au listat toate fișierele din directorul curent."</p>
+    </div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
