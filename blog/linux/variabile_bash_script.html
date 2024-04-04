@@ -1,0 +1,80 @@
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link" href="../../blog/linux/descriere_comanda_rm_linux.html">GNU/Linux</a>
+      </div>
+  </nav>
+  <!-- Main container -->
+  <div class="container mt-5 pt-4 mb-5">
+        <h1 class="fw-normal text-center mt-3">Ce sunt varibilele din Bash Script?</h1>
+        <hr/>
+        <p> Variabilele din bash script sunt containere care stochează valori temporar în timpul rulării scriptului. 
+            Ele permit scriptului să manipuleze date și să păstreze informații între diferite părți ale codului.</p>
+        <p>
+            Iată o descriere detaliată a variabilelor bash:
+        </p>
+        <p class="fw-bold">Tipuri de variabile</p>
+        <ul>
+            <li><p><strong>Variabile de mediu</strong>: Aceste variabile sunt definite la nivel de sistem și sunt disponibile pentru toate procesele.
+                 Ele stochează informații globale despre sistem, cum ar fi calea de acces curentă (<code>$PATH</code>), utilizatorul curent (<code>$USER</code>) și ID-ul de proces (<code>$PPID</code>).</p>
+            </li>
+            <li><p><strong>Variabile locale</strong>: Aceste variabile sunt definite în cadrul unui script sau funcție și sunt disponibile doar în scopul respectiv. Ele nu afectează variabilele cu același nume definite în alte părți ale scriptului sau în mediul global.</p></li>
+        </ul>
+        <p class="fw-bold">Definirii de variabile</p>
+        <p>Pentru a defini o variabilă, utilizați sintaxa următoare:</p>
+        <p><code>name = value</code></p>
+        <ul>
+            <li><p><code>name</code> este numele variabilei, care trebuie să înceapă cu o literă sau o subliniere (_). Nu poate conține spații sau caractere speciale (cu excepția câtorva cazuri speciale).</p></li>
+            <li><p><code>value</code></p> este valoarea pe care doriți să o stocați în variabilă. Poate fi un șir de text, un număr, o altă variabilă sau rezultatul unei comenzi.</li>
+        </ul>
+        <p class="fw-bold">Exemplu:</p>
+        <p><code>username="Ion_Cuza"</code></p>
+        <p><code>current_date=$(date +%d-%m-%Y)</code></p>
+        <p><code>echo "Salut, $username! Astazi este $current_date."</code></p>
+        <p>În acest exemplu:</p>
+        <ul>
+            <li><p>Se definește o variabilă <code>username</code> cu valoarea "Ion_Cuza".</p></li>
+            <li><p>Se definește o variabilă <code>current_date</code> folosind comanda <code>date</code> pentru a obține data curentă formatată (%d-%m-%Y).</p></li>
+            <li><p>Se utilizează variabilele <code>username</code> și <code>current_date</code> în interiorul comenzii <code>echo</code> pentru a afișa un mesaj personalizat.</p></li>
+        </ul>
+        <p class="fw-bold">Accesarea valorilor variabilelor</p>
+        <p>Pentru a accesa valoarea unei variabile, utilizați prefixul $ urmat de numele variabilei. De exemplu:</p>
+        <p><code>message="Bash scripting este distractiv!"</code></p>
+        <p><code>echo $message</code></p>
+        <p class="fw-bold">Eliminarea variabilelor</p>
+        <p>Pentru a elimina o variabilă și a elibera memoria pe care o folosește, utilizați comanda <code>unset</code>:</p>
+        <p><code>unset username</code></p>
+        <p class="fw-bold">Rețineți</p>
+        <ul>
+            <li><p>Bash nu necesită declararea tipului de date al variabilelor. Variabilele pot stoca diferite tipuri de date în același script.</p></li>
+            <li><p>Puteți efectua operații aritmetice pe variabile care conțin valori numerice.</p></li>
+            <li><p>Bash acceptă operatori de șir pentru manipularea șirurilor de text stocate în variabile.</p></li>
+        </ul>
+
+    
+    
+    
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    
+    </body>
+    </html>
