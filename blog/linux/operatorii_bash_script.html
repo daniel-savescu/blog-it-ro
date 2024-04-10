@@ -1,0 +1,71 @@
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link" href="../../blog/linux/descriere_comanda_rm_linux.html">GNU/Linux</a>
+      </div>
+  </nav>
+  <!-- Main container -->
+  <div class="container mt-5 pt-4 mb-5">
+        <h1 class="fw-normal text-center mt-3">Ce este Bash Scripting?</h1>
+        <hr/>
+        <p>Bash scripturile folosesc o varietate de operatori pentru a efectua calcule, compara valori, controla fluxul și manipula lanțuri de caractere. Iată o descriere detaliată a diferitelor tipuri de operatori:</p>
+        <ol>
+            <li><p class="fw-bold">Operatori aritmetici</p></li>
+            <ul>
+                <li><p>Efectuați calcule matematice simple pe numere întregi.</p></li>
+                <li><p>Exemple: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulo)</p></li>
+                <li><p>Exemplu: <code>var=$((x + y))</code></p></li>
+            </ul>
+            <li><p class="fw-bold">Operatori relaționali</p></li>
+            <ul>
+                <li><p>Comparați valorile pentru a determina adevărul sau falsul unei condiții.</p></li>
+                <li><p>Exemple: <code>==</code> (egal), <code>!=</code> (diferit), <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code></p></li>
+                <li><p>Exemplu: <code>if [ $x -gt $y ]; then echo "X este mai mare decât Y"; fi</code></p></li>
+            </ul>
+            <li><p class="fw-bold">Operatori logici</p></li>
+            <ul>
+                <li><p>Combinați condiții pentru a crea expresii logice mai complexe.</p></li>
+                <li><p>Exemple: <code>&&</code> (AND), <code>||</code> (OR), <code>!</code> (NOT)</p></li>
+                <li><p>Exemplu: <code>if [[ $file -f && $file -r ]]; then echo "Fișierul există și este lizibil"; fi</code></p></li>
+            </ul>
+            <li><p class="fw-bold">Operatori pentru şiruri</p></li>
+            <ul>
+                <li><p>Manipulați lanțuri de caractere.</p></li>
+                <li><p>Exemple: <code>+</code> (concatenare), <code>==</code> (egalitate), <code>!=</code> (diferit)</p></li>
+                <li><p>Exemplu: <code>nume_complet="$prenume $nume"</code></p></li>
+            </ul>
+            <li><p class="fw-bold">Operatori de testare a fișierelor</p></li>
+            <ul>
+                <li><p>Verificați proprietățile și starea fișierelor și directoarelor.</p></li>
+                <li><p>Exemple: <code>-f</code> (fișier regular), <code>-d</code> (director), <code>-r</code> (lizibil), <code>-w</code> (scriibil), <code>-x</code> (executabil)</p></li>
+                <li><p>Exemplu: <code>if [[ -f $fisier ]]; then echo "Fișierul există"; fi</code></p></li>
+            </ul>
+            <li><p class="fw-bold">Operatori bitwise</p></li>
+            <ul>
+                <li><p>Efectuați operații pe biți individuali (utilizate mai rar în scripturi simple).</p></li>
+                <li><p>Exemple: <code>&</code> (AND bitwise), <code>|</code> (OR bitwise), <code>^</code> (XOR bitwise)</p></li>
+            </ul>
+        </ol>
+        <p>Pentru informații mai detaliate despre fiecare operator, inclusiv utilizarea și sintaxa specifică, puteți consulta documentația Bash sau căutați online [man bash].</p>
+
+</div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
