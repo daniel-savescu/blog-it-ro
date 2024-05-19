@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+   <!--Navbar-->
+   <nav class="navbar fixed-top mb-5">
+    <div class="container">
+      <a class="nav-link" href="../../index.html">Pagină de start</a>
+      <a class="nav-link" href="../../blog/linux/linux_index.html">GNU/Linux</a>
+    </div>
+</nav>
+<!-- Main container -->
+<div class="container mt-5 pt-4 mb-5">
+    <h1 class="fw-normal text-center mt-3">Controlul fluxului execuției in Bash Script</h1>
+        <hr/>
+    <p>Flow controlul într-un script Bash se referă la utilizarea diferitelor structuri de control pentru a gestiona direcția execuției codului în funcție de condiții specifice sau repetarea anumitor secvențe de cod. Cele mai comune structuri de control de flux în Bash sunt if, case, for, while și until. Să le examinăm în detaliu pe fiecare dintre acestea:</p>
+    <ol>
+        <li class="fw-bold">Structura 'if'</li>
+            <p>Structura <strong>'if'</strong> este folosită pentru a executa o secvență de comenzi doar dacă o anumită condiție este îndeplinită.</p>
+            <p class="fw-bold">Sintaxa de bază:</p>
+        
+<pre>
+if [ condiție ]; then
+    comenzi
+fi
+</pre>
+    <p class="fw-bold">Exemplu:</p>
+<pre>
+#!/bin/bash
+
+num=10
+
+if [ $num -gt 5 ]; then
+    echo "Numărul este mai mare decât 5"
+fi
+</pre>
+
+    <p class="fw-bold">if-else și if-elif-else:</p>
+
+<pre>
+if [ condiție ]; then
+    comenzi
+else
+    alte_comenzi
+fi
+</pre>
+
+<pre>
+if [ condiție1 ]; then
+    comenzi1
+elif [ condiție2 ]; then
+    comenzi2
+else
+    alte_comenzi
+fi
+</pre>
+
+<p class="fw-bold">Exemplu if-elif-else:</p>
+
+<pre>
+#!/bin/bash
+
+num=10
+
+if [ $num -gt 10 ]; then
+    echo "Numărul este mai mare decât 10"
+elif [ $num -eq 10 ]; then
+    echo "Numărul este exact 10"
+else
+    echo "Numărul este mai mic decât 10"
+fi
+</pre>
+
+       <li class="fw-bold">Structura 'case'</li>
+       <p>Structura <strong>'case'</strong> este utilizată pentru a compara o variabilă împotriva mai multor modele și a executa diferite comenzi în funcție de rezultatul comparației.</p>
+       <p class="fw-bold">Sintaxa de bază:</p>
+<pre>
+case variabilă in
+    model1)
+        comenzi1
+        ;;
+    model2)
+        comenzi2
+        ;;
+    *)
+        comenzi_default
+        ;;
+esac
+</pre>
+
+    <p class="fw-bold">Exemplu:</p>
+
+<pre>
+#!/bin/bash
+
+fruit="apple"
+
+case $fruit in
+    "apple")
+        echo "Este un măr"
+        ;;
+    "banana")
+        echo "Este o banană"
+        ;;
+    *)
+        echo "Fruct necunoscut"
+        ;;
+esac
+</pre>
+    <li class="fw-bold">Structura 'for'</li>
+    <p>Structura <strong>'for'</strong> este utilizată pentru a itera printr-o listă de elemente sau un interval de numere.</p>
+    <p class="fw-bold">Sintaxa de bază:</p>
+<pre>
+for variabilă in listă; do
+    comenzi
+done
+</pre>
+    <p class="fw-bold">Exemplu:</p>
+<pre>
+#!/bin/bash
+
+for num in 1 2 3 4 5; do
+    echo "Numărul este $num"
+done
+</pre>
+
+<p class="fw-bold">Iterare prin fișiere:</p>
+
+<pre>
+for file in /path/to/directory/*; do
+    echo "Fișierul este $file"
+done
+</pre>
+
+    <li class="fw-bold"> Structura 'while'</li>
+    <p>Structura <strong>'while'</strong> este utilizată pentru a executa comenzi în mod repetat cât timp o condiție este adevărată.</p>
+    <p class="fw-bold">Sintaxa de bază:</p>
+
+<pre>
+while [ condiție ]; do
+    comenzi
+done
+</pre>
+
+    <p class="fw-bold">Exemplu:</p>
+
+<pre>
+#!/bin/bash
+
+count=1
+
+while [ $count -le 5 ]; do
+    echo "Numărul este $count"
+    count=$((count + 1))
+done
+</pre>
+
+    <li class="fw-bold">Structura 'until'</li>
+    <p>Structura <strong>'until'</strong> este similară cu while, dar execută comenzi până când condiția devine adevărată (adică cât timp condiția este falsă).</p>
+    <p class="fw-bold">Sintaxa de bază:</p>
+
+<pre>
+until [ condiție ]; do
+    comenzi
+done
+</pre>
+
+    <p class="fw-bold">Exemplu:</p>
+
+<pre>
+ #!/bin/bash
+
+count=1
+
+until [ $count -gt 5 ]; do
+    echo "Numărul este $count"
+    count=$((count + 1))
+done
+</pre>
+    </ol>
+<h4 class="mt-4">Concluzie</h4> 
+<p>
+    Utilizarea corectă a acestor structuri de control permite crearea de scripturi Bash eficiente și flexibile. Structurile <strong>'if'</strong>, <strong>'case'</strong>, <strong>'for'</strong>, <strong>'while'</strong>, și <strong>'until'</strong> sunt esențiale pentru controlul fluxului execuției și permit luarea de decizii și repetarea de operații în funcție de condiții specifice.
+</p>
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
