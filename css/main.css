@@ -1,4 +1,10 @@
-
+body{
+    background-color: #2e2d2d;
+}
+.card{
+    background-color: #2e2d2d;
+    border-color: #fff;
+}
 nav.navbar{
     background-color: rgb(250, 250, 250);
 }
