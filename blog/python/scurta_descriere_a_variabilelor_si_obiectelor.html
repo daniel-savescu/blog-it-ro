@@ -1,0 +1,66 @@
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link special" href="../../blog/linux/linux_index.html">GNU/Linux</a>
+        <a class="nav-link" href="../python/python_index.html">Python</a>
+      </div>
+    </nav>
+    <!-- Main container -->
+    <div class="container text-white mt-5 pt-4 mb-4">
+        <!-- Main container content -->
+        <h1 class="fw-normal text-center mt-3">O descriere simplă a variabilelor, numelor de variabile și a obiectelor în Python</h1>
+        <hr/>
+        <p class="fw-bold">Gândește-te la Python ca la un joc cu cutii:</p>
+        <ul>
+            <li><p><span class="fw-bold">Variabilele: </span>Sunt ca niște cutii etichetate unde poți pune jucării (date). Le poți da nume descriptive, precum <code>nume</code>, <code>varsta</code>, <code>pi</code>.</p>
+            </li>
+            <li><p><span class="fw-bold">Numele de variabile: </span>Sunt etichetele cutiilor. Trebuie să fie scrise cu litere mici, litere mari, cifre și subliniuare (<code>_</code>), dar nu pot începe cu o cifră și nu pot avea spații.</p>
+            </li>
+            <li><p><span class="fw-bold">Valorile: </span>Sunt jucăriile pe care le pui în cutii. Pot fi numere, șiruri de caractere, liste, dicționare etc.</p></li>
+        </ul>
+        <p class="fw-bold">Totul este un obiect:</p>
+        <p>În Python, aproape tot ce poți face este legat de obiecte. Gândește-te la obiecte ca la lucruri din lumea reală, cum ar fi oameni, mașini, animale.</p>
+        <ul>
+            <li>
+                <p><span class="fw-bold">Clase: </span>Sunt ca niște planuri care definesc cum arată și cum se comportă obiectele. De exemplu, o clasă <code>Persoana</code> ar putea avea atribute precum <code>nume</code>, <code>vârstă</code> și metode precum <code>spune_salut()</code>.</p>
+            </li>
+            <li><p><span class="fw-bold">Instanțe: </span>Sunt ca niște obiecte reale create din planuri. De exemplu, o instanță a clasei <code>Persoana</code> ar putea fi o persoană numită "Ana" care are 30 de ani.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Exemple:</p>
+        <ul>
+            <li>
+                <p><code>nume = "Ana"</code> pune o jucărie "Ana" (șir de caractere) în cutia numită <code>nume</code>.</p>
+            </li>
+            <li>
+                <p><code>print(nume)</code> scoate jucăria din cutie și o afișează.</p>
+            </li>
+            <li>
+                <p><code>persoana1 = Persoana("Ana", 30)</code> creează o instanță a clasei <code>Persoana</code> numită <code>persoana1</code> cu atributele <code>nume</code> setat la "Ana" și <code>varsta</code> setat la 30.</p>
+            </li>
+            <li><p><code>persoana1.spune_salut()</code> apelează metoda <code>spune_salut()</code> a obiectului <code>persoana1</code>, care afișează un mesaj de salut.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Concluzie:</p>
+        <p>Variabilele stochează date, numele de variabile le fac referire, iar obiectele modelează entități din lumea reală. Totul în Python este legat de obiecte, oferind o modalitate flexibilă și puternică de a scrie cod.</p>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
