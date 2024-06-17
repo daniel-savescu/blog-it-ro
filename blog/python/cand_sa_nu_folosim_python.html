@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ro">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link special" href="../../blog/linux/linux_index.html">GNU/Linux</a>
+        <a class="nav-link" href="../python/python_index.html">Python</a>
+      </div>
+    </nav>
+    <!-- Main container -->
+    <div class="container text-white mt-5 pt-4 mb-4">
+        <!-- Main container content -->
+        <h1 class="fw-normal text-center mt-3">Cand sa nu folosim Python</h1>
+        <hr/>
+        <p class="fw-bold">Performanță:</p>
+        <ul>
+            <li>
+                <p>Python este un limbaj interpretat, în timp ce alte limbaje precum C++ sau Java sunt compilate. Acest lucru înseamnă că codul Python este tradus în cod mașină pe zbor, în timp ce codul compilat este deja tradus în cod mașină specific platformei. Ca urmare, Python poate fi semnificativ mai lent pentru sarcini care necesită o procesare intensivă a numerelor sau grafică 3D complexă.</p>
+            </li>
+            <li><p>Utilizarea extensivă a bibliotecilor și cadrelor Python poate duce, de asemenea, la o scădere a performanței, deoarece acestea adaugă un strat suplimentar de abstractizare și cheltuieli generale.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Memorie:</p>
+        <ul>
+            <li><p>Python gestionează automat memoria, folosind un colector de gunoi. Acest lucru este convenabil pentru programatori, deoarece nu trebuie să se preocupe manual de eliberarea memoriei. Cu toate acestea, colectorul de gunoi poate fi ineficient în anumite cazuri, ducând la fragmentare de memorie și pierderi de performanță.</p>
+            </li>
+            <li><p>Dacă aveți nevoie de un control precis al memoriei, alte limbaje precum C sau C++ vă oferă mai multă libertate și control asupra modului în care este alocată și utilizată memoria.</p></li>
+        </ul>
+        <p class="fw-bold">Integrare hardware:</p>
+        <ul>
+            <li><p>Python nu este la fel de bine integrat cu hardware-ul ca alte limbaje precum C sau C++. Acest lucru îl face mai puțin potrivit pentru proiecte care necesită control direct al dispozitivelor sau interfață cu senzori.</p>
+            </li>
+            <li><p>Bibliotecile terțe pot oferi un anumit nivel de acces la hardware, dar este posibil să nu fie la fel de eficiente sau performante ca soluțiile specifice limbajului.</p></li>
+        </ul>
+        <p class="fw-bold">Securitate:</p>
+        <ul>
+            <li><p>Python este un limbaj general, nu specific securității. Deși există biblioteci și cadre disponibile pentru a vă ajuta să scrieți cod Python sigur, este important să fiți conștienți de vulnerabilitățile potențiale și să luați măsuri de precauție adecvate.</p>
+            </li>
+            <li><p>Alte limbaje, cum ar fi C++ sau Java, au caracteristici de securitate integrate care le pot face mai potrivite pentru aplicații sensibile din punct de vedere al securității.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Scalabilitate:</p>
+        <ul>
+            <li>
+                <p>Python este o alegere excelentă pentru proiecte mici și medii, dar poate deveni mai dificil de gestionat și scalat pentru proiecte foarte mari și complexe.</p>
+            </li>
+            <li>
+                <p>Structura dinamică a limbajului și gestionarea automată a memoriei pot duce la probleme de performanță și dificultăți în menținerea codului pe măsură ce baza de cod crește.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Alte considerente:</p>
+        <ul>
+            <li><p><span class="fw-bold">Maturizare: </span>Python este un limbaj relativ matur, dar comunitatea sa nu este la fel de mare ca cea a altor limbaje, cum ar fi Java sau C++. Acest lucru poate însemna că poate fi mai dificil să găsiți biblioteci și cadre specializate pentru anumite nevoi sau să obțineți ajutor atunci când întâmpinați probleme.</p>
+            </li>
+            <li><p><span class="fw-bold">Cost: </span>    Python este un limbaj open-source, deci este gratuit de utilizat și distribuit. Cu toate acestea, costurile pot apărea atunci când se utilizează biblioteci și cadre comerciale sau se angajează dezvoltatori Python.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Concluzie</p>
+        <p>Python este un limbaj versatil și puternic, cu o gamă largă de aplicații. Cu toate acestea, este important să fiți conștienți de limitările sale și să alegeți limbajul de programare potrivit pentru nevoile specifice ale proiectului dumneavoastră. Luați în considerare factorii precum performanța, controlul memoriei, platforma țintă, integrarea hardware-ului, securitatea și scalabilitatea pentru a lua o decizie informată.
+        </p>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
