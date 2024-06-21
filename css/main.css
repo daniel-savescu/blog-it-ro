@@ -6,7 +6,8 @@ body{
     border-color: #fff;
 }
 nav.navbar{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
 }
 a{
     text-decoration: none;
@@ -19,3 +20,4 @@ code{
 .special{
     margin-left:auto;
 }
+

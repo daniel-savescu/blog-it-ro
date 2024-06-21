@@ -1,0 +1,121 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link special" href="../../blog/linux/linux_index.html">GNU/Linux</a>
+        <a class="nav-link" href="../python/python_index.html">Python</a>
+      </div>
+    </nav>
+    <!-- Main container -->
+    <div class="container text-white mt-5 pt-4 mb-4">
+        <!-- Main container content -->
+        <h1 class="fw-normal text-center mt-3">Type casting în Python</h1>
+        <hr/>
+        <p class="fw-bold">Ce este type castingul?</p>
+        <p>Type castingul în Python este procesul de a <span class="fw-bold">converti o valoare dintr-un tip de date în altul</span>. Este o operație importantă în programare, deoarece permite manipularea eficientă a datelor și efectuarea operațiilor corecte.</p>
+        <p class="fw-bold">Tipuri de type casting:</p>
+        <p>Există două tipuri principale de type casting în Python:</p>
+        <ol>
+            <li>
+                <p class="fw-bold">Type casting implicit:</p>
+                <ul>
+                    <li>
+                        <p>Se realizează automat de către interpretorul Python.</p>
+                    </li>
+                    <li>
+                        <p>Are loc în anumite situații, cum ar fi:
+                            <ul>
+                                <li>
+                                    <p>Atribuirea unei valori de un tip de date la o variabilă de alt tip (de exemplu, <code>var_int = 3.14</code>).</p>
+                                </li>
+                                <li>
+                                    <p>Operații aritmetice care implică tipuri de date diferite (de exemplu, <code>10 + 5.2</code>).</p>
+                                </li>
+                            </ul>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Avantaj: Este convenabil și nu necesită intervenție manuală.</p>
+                    </li>
+                    <li>
+                        <p>Dezavantaj: Poate duce la pierderea de precizie sau la erori dacă nu este utilizat corect.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p class="fw-bold">Type casting explicit:</p>
+                <ul>
+                    <li>
+                        <p>Se realizează manual de către programator folosind funcții specifice.</p>
+                    </li>
+                    <li>
+                        <p>Permite o conversie mai precisă și controlată.</p>
+                    </li>
+                    <li>
+                        <p>Funcții uzuale:</p>
+                            <ul>
+                                <li>
+                                    <p><code>int()</code>: Converteste la tipul int (număr întreg).</p>
+                                </li>
+                                <li>
+                                    <p><code>float()</code>: Converteste la tipul float (număr real).</p>
+                                </li>
+                                <li>
+                                    <p><code>str()</code>: Converteste la tipul str (șir de caractere).</p>
+                                </li>
+                                <li>
+                                    <p><code>bool()</code>: Converteste la tipul bool (boolean).</p>
+                                </li>
+                            </ul>
+                    </li>
+                    <li>
+                        <p>Avantaj: Oferă mai mult control asupra conversiei.</p>
+                    </li>
+                    <li>
+                        <p>Dezavantaj: Poate fi mai complex și necesită o atenție sporită din partea programatorului.</p>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p class="fw-bold">Exemplu de type casting explicit:</p>
+        <code>
+            var_str = "123"<br/><br/>
+            # Conversie la int<br/>
+            var_int = int(var_str)<br/>
+            print(var_int, type(var_int)) #Output : 123 &lt;class 'int'&gt;<br/><br/>
+
+            #Conversie la float</br/>
+            var_float = float(var_str)<br/>
+            print(var_float, type(var_float)) #Output 123.0 &lt;class 'float'&gt;
+        </code>
+        <p class="fw-bold mt-3">Recomandări:</p>
+        <ul>
+            <li>
+                <p>Alegeți tipul de casting adecvat în funcție de nevoile specifice ale programului.</p>
+            </li>
+            <li>
+                <p>Folosiți type castingul implicit cu prudență pentru a evita pierderea de precizie sau erorile.</p>
+            </li>
+            <li>
+                <p>Documentați clar operațiunile de type casting explicit pentru a facilita înțelegerea codului.</p>
+            </li>
+        </ul>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>

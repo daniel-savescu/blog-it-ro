@@ -1,0 +1,109 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/main.css">
+    <title>Blog IT RO</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mb-5">
+      <div class="container">
+        <a class="nav-link" href="../../index.html">Pagină de start</a>
+        <a class="nav-link special" href="../../blog/linux/linux_index.html">GNU/Linux</a>
+        <a class="nav-link" href="../python/python_index.html">Python</a>
+      </div>
+    </nav>
+    <!-- Main container -->
+    <div class="container text-white mt-5 pt-4 mb-4">
+        <!-- Main container content -->
+        <h1 class="fw-normal text-center mt-3">Tipuri de date numerice în Python</h1>
+        <hr/>
+        <p>Python are două tipuri de date principale pentru stocarea numerelor:</p>
+        <ol>
+            <li><p class="fw-bold">Numere întregi (int):</p></li>
+            <ul>
+                <li>
+                    <p>Reprezintă numere întregi, pozitive, negative sau zero.</p>
+                </li>
+                <li>
+                    <p>Nu au zecimale.</p>
+                </li>
+                <li>
+                    <p>Se scriu fără ghilimele, de exemplu: 5, -100, 2048.</p>
+                </li>
+                <li>
+                    <p>Pot fi foarte mari, limitate doar de memoria calculatorului.</p>
+                </li>
+                <li>
+                    <p>Operații posibile: +, -, *, /, // (împărțire cu rest), %, ** (exponentiere).</p>
+                </li>
+                <li>
+                    <p>Funcții utile: <code>int()</code>, <code>pow()</code>.</p>
+                </li>
+            </ul>
+            <p class="fw-bold">Exemplu:</p>
+
+<code>
+var_int = 123<br/>
+print(var_int) #Output : 123<br/><br/>
+
+rezultat = 10 + 5 * 2<br/>
+print(rezultat) #Output : 20
+</code>
+        <li>
+            <p class="fw-bold mt-3">Numere reale (float):</p>
+        </li>
+        <ul>
+            <li>
+                <p>Reprezintă numere cu zecimale.</p>
+            </li>
+            <li>
+                <p>Se scriu cu sau fără ghilimele, de exemplu: 3.14, -9.25, 10.5e2 (10.5 la puterea 2).</p>
+            </li>
+            <li>
+                <p>Pot fi foarte mari sau foarte mici, dar pot avea o precizie limitată.</p>
+            </li>
+            <li>
+                <p>Operații posibile: +, -, *, /, // (împărțire cu rest), %, **.</p>
+            </li>
+            <li>
+                <p>Funcții utile: <code>float()</code>, <code>round()</code>.</p>
+            </li>
+        </ul>
+        <p class="fw-bold">Exemplu:</p>
+        <code>
+            var_float = 15.67<br/>
+            print(var_float) #Output : 15.67<br/><br/>
+
+            suma = 3.14 + 4.2<br/>
+            produs = 5 * 2.5<br/>
+            print(suma, produs) #Output : 7.34 12.5 
+        </code>
+        </ol>
+        <p class="fw-bold">Observații:</p>
+        <ul>
+            <li>
+                <p>Python detectează automat tipul de date numeric la atribuire.</p>
+            </li>
+            <li>
+                <p>Se poate converti un număr dintr-un tip în altul folosind funcțiile specifice (<code>int()</code>, <code>float()</code>).</p>
+            </li>
+            <li>
+                <p>Este important să alegeți tipul de date adecvat pentru operațiile dorite. De exemplu, dacă aveți nevoie de o precizie mare, folosiți <code>float</code>.</p>
+            </li>
+            <li>
+                <p>Există și un al treilea tip de date numeric, mai puțin utilizat: <code>complex</code>. Acesta stochează numere complexe formate din partea reală și partea imaginară.</p>
+            </li>
+        </ul>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+    </html>
